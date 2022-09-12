@@ -1,0 +1,13 @@
+.container_s{
+ width: fit-content;
+ margin: auto;
+ margin-top: 50px;
+}
+.search-form-elem{
+    width: 550px;
+}
+.button_s{
+    background-color: #38B6FF;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+}

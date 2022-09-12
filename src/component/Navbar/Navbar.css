@@ -1,0 +1,15 @@
+.navbar {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+.text {
+    font-weight: 500;
+    font-size:medium;
+    color: white;
+}
+.background {
+    background-color: #38B6FF;
+    margin-bottom: 50px;
+}

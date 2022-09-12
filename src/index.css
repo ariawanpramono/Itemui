@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* resets */
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+button{
+  outline: 0;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+img{
+  width: 100%;
+  display: block;
+}
+input{
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}

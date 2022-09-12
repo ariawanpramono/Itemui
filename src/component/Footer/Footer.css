@@ -1,0 +1,28 @@
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #1175d2;
+  margin-bottom: 0px;
+}
+
+.footer-left {
+  float: left;
+  color: white;
+  margin: 12px;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-right a {
+  color: white;
+  float: left;
+  margin: 12px 12px 12px 0;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
