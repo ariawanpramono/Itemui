@@ -16,17 +16,17 @@ function NavbarMenu() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text" href="/">
+              <a className="nav-link text" href="/about">
                 About<span className="sr-only"></span>
               </a>
             </li>
             <li className="text nav-item">
-              <a className="nav-link text" href="../../pages/Register/Register.js">
+              <a className="nav-link text" href="../../pages/Register">
                 Register<span className="sr-only"></span>
               </a>
             </li>
             <li className="text nav-item">
-              <a className="nav-link text" href="../../pages/Login/Login.js">
+              <a className="nav-link text" href="../../pages/Login">
                 Login<span className="sr-only"></span>
               </a>
             </li>

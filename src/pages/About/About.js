@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImg from "../../images/about-img.jpg";
+// import aboutImg from "../../images/about-img.jpg";
 
 const About = () => {
   return (
@@ -11,9 +11,9 @@ const About = () => {
         </div>
 
         <div className="about-content grid">
-          <div className="about-img">
+          {/* <div className="about-img">
             <img src={aboutImg} alt="" />
-          </div>
+          </div> */}
           <div className="about-text">
             <h2 className="about-title fs-26 ls-1">About BookHub</h2>
             <p className="fs-17">
