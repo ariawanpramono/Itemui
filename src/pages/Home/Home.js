@@ -19,6 +19,7 @@ const Home = () => {
       <Cards />
       <br />
       <Footer />
+      <p>Test Git</p>
     </main>
   );
 };
