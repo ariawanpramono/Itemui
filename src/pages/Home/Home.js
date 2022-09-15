@@ -13,23 +13,14 @@ import About from "../About/About";
 
 const Home = () => {
   return (
-    <main>
-      <NavbarMenu />
-      <br />
+    <main className="home">
+     
       <Header />
       <br />
       <SearchForm />
       <br /> 
       <Cards />
-      <br />
-      <Footer />
 
-      <Routes>
-        <Route path='pages/Register' element={<Register/>}/>
-        <Route path='pages/Login' element={<Login/>}/>
-        <Route path='about' element={<About/>}/>
-      </Routes>
-      
     </main>
 
   );
