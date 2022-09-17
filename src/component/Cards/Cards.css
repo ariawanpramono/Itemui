@@ -4,3 +4,10 @@
   margin-bottom: 50px;
   text-align: center;
 }
+
+.detail-button{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+

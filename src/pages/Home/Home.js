@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import About from "../About/About";
+import Aksesoris from "../Item/Aksesoris";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       <br />
       <SearchForm />
       <br /> 
-      <Cards />
+      <Cards/>
 
     </main>
 

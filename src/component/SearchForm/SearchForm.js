@@ -6,11 +6,11 @@ const SearchForm = () => {
       <div className="container_s">
         <div className="search-form-content">
           <form className="search-form">
-            <div className="search-form-elem flex flex-sb bg-white">
+            <div className="search-form-elem flex flex-sb bg-white" form-outline>
               <input
                 type="text"
                 className="form-control"
-                placeholder="search"
+                placeholder="Search..."
               >
               </input>
               <button type="submit" className="button_s">Cari</button>
@@ -19,6 +19,7 @@ const SearchForm = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
