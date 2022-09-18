@@ -24,7 +24,6 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Aksesoris</Card.Title>
-              <Card.Text>Text</Card.Text>
               <Link className="btn btn-primary btn-block" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>
@@ -38,7 +37,6 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Dokumen</Card.Title>
-              <Card.Text>Text</Card.Text>
               <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>
@@ -52,7 +50,6 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Elektronik</Card.Title>
-              <Card.Text>Text</Card.Text>
               <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>
@@ -66,7 +63,6 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Kendaraan</Card.Title>
-              <Card.Text>Text</Card.Text>
               <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>
@@ -80,7 +76,6 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Lain-Lain</Card.Title>
-              <Card.Text>Text</Card.Text>
               <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>

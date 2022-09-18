@@ -21,38 +21,8 @@ const App = () => {
         <Route path='pages/Login' element={<Login/>}/>
         <Route path='about' element={<About/>}/>
       </Routes>
-      {/* <div className="p-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-m-6">
-
-              <div className="card">
-                <div className="card-header">Belajar Submit</div>
-                <div className="card-body">
-                  <form>
-
-                    <div className="mb-4">
-                      <label htmlFor="firstname" className="form-label">Firstname</label>
-                      <input type="text" name="firstname" id="firstname" className="form-control"/>
-                    </div>
-
-                    <div className="mb-4">
-                      <label htmlFor="lastname" className="form-label">Lastname</label>
-                      <input type="text" name="lastname" id="lastname" className="form-control"/>
-                    </div>
-
-                    <button type="submit" className="btn btn-primary btn-block">Show</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div> */}
       <Footer />
     </main>
-
   );
 };
 

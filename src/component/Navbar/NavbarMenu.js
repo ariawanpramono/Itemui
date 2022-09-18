@@ -8,7 +8,9 @@ function NavbarMenu() {
   return (
     <Navbar className="background" expand="lg">
       <Container className="navbar">
-        <Navbar.Brand href="/">iTemui</Navbar.Brand>
+        <Navbar.Brand href="/">
+          iTemui
+        </Navbar.Brand>
         <Nav className="justify-content-end" activeKey="/home">
           <ul className="navbar-nav">
           <li className="nav-item">
