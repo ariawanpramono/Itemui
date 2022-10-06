@@ -1,9 +1,25 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import "bootstrap";
 import "../LoginRegister.css";
 
-export default class Register extends Component {
-  render() {
+export default function Register() {
+  const [values, setValues] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    password: ''
+  })
+
+  const handleFirstNameInputChange = (e) => {
+    setValues({...values, firstname: e.target.value})
+  }
+  const handleLastNameInputChange = (e) => {
+    setValues({...values, lastname: e.target.value})
+  }
+  const handleEmailInputChange = (e) => {
+    setValues({...values, email: e.target.value})
+  }
+  
     return (
       <div className="container_signup">
         <form>
@@ -11,14 +27,19 @@ export default class Register extends Component {
           <div className="mb-3">
             <label>First name</label>
             <input
+              onChange={handleFirstNameInputChange}
+              value={values.firstname}
               type="text"
               className="form-control"
               placeholder="First name"
+              name="firstname"
             />
           </div>
           <div className="mb-3">
             <label>Last name</label>
             <input
+              onChange={handleLastNameInputChange}
+              value={values.lastname}
               type="text"
               className="form-control"
               placeholder="Last name"
@@ -27,6 +48,8 @@ export default class Register extends Component {
           <div className="mb-3">
             <label>Email address</label>
             <input
+              onChange={handleEmailInputChange}
+              value={values.email}
               type="email"
               className="form-control"
               placeholder="Enter email"
@@ -51,5 +74,4 @@ export default class Register extends Component {
         </form>
       </div>
     );
-  }
 }

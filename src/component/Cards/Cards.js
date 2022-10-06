@@ -11,12 +11,10 @@ import { Link } from "react-router-dom";
 
 function cards() {
   return (
-    <div className="container_">
+    <div className="container">
       <div className="card-group">
-
         <div className="row justify-content-center">
-
-          <div className="col-lg-2 col-md-3 col-6 mt-3 mx-auto">
+          <div className="col-lg-2 col-md-3 col-6 mt-3 ">
           <Card class="card h-100" >
             <Card.Img
               variant="top"
@@ -24,12 +22,12 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Aksesoris</Card.Title>
-              <Link className="btn btn-primary btn-block" to={'/detail/aksesoris'}>Detail</Link>
+              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
 
-          <div className="col-lg-2 col-md-3 col-6 mt-3 mx-auto">
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
           <Card class="card h-100" >
             <Card.Img
               variant="top"
@@ -42,7 +40,7 @@ function cards() {
           </Card>
           </div>
 
-          <div className="col-lg-2 col-md-3 col-6 mt-3 mx-auto">
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
           <Card class="card h-100" >
             <Card.Img
               variant="top"
@@ -55,7 +53,7 @@ function cards() {
           </Card>
           </div>
 
-          <div className="col-lg-2 col-md-3 col-6 mt-3 mx-auto">
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
           <Card class="card h-100" >
             <Card.Img
               variant="top"
@@ -68,7 +66,7 @@ function cards() {
           </Card>
           </div>
 
-          <div className="col-lg-2 col-md-3 col-6 mt-3 mx-auto">
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
           <Card class="card h-100" >
             <Card.Img
               variant="top"

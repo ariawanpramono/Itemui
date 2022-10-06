@@ -1,8 +1,6 @@
-.container_ {
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 50px;
+.container{
   text-align: center;
+  
 }
 
 .detail-button{
@@ -11,3 +9,10 @@
   margin-bottom: 10px;
 }
 
+.card-group{
+  justify-content: center;
+}
+
+.card{
+  max-width: 200px;
+}

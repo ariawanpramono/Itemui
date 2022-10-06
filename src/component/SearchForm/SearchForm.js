@@ -2,23 +2,19 @@ import "./SearchForm.css";
 
 const SearchForm = () => {
   return (
-    <div className="search-form">
-      <div className="container_s">
-        <div className="search-form-content">
-          <form className="search-form">
-            <div className="search-form-elem flex flex-sb bg-white" form-outline>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search..."
-              >
-              </input>
-              <button type="submit" className="button_s">Cari</button>
+    <>
+      <div class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+          <div class="col-md-8">
+            <div class="search">
+              <input type="text" class="form-control"></input>
+              <button class="btn btn-primary">Search</button>
             </div>
-          </form>
+            
+          </div>
         </div>
       </div>
-    </div>
+    </>
 
   );
 };
