@@ -8,7 +8,7 @@ const SearchForm = () => {
           <div class="col-md-8">
             <div class="search">
               <input type="text" class="form-control"></input>
-              <button class="btn btn-primary">Search</button>
+              <button class="btn btn-sm btn-primary">Search</button>
             </div>
             
           </div>

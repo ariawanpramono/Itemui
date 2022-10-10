@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 3,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 3
+    },
+    {
+        "id": 4,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 4
+    },
+    {
+        "id": 6,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    }
+]
