@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 
 function cards() {
 
+  const idAksesoris = 1;
+
   return (
     <div className="container">
       <div className="card-group">
@@ -23,7 +25,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Aksesoris</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
+              <Link state={idAksesoris} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -36,7 +38,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Dokumen</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
+              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -49,7 +51,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Elektronik</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
+              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -62,7 +64,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Kendaraan</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
+              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -75,7 +77,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Lain-Lain</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/aksesoris'}>Detail</Link>
+              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>

@@ -15,19 +15,19 @@
         "id": 3,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
-        "category_id": 3
+        "category_id": 1
     },
     {
         "id": 4,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
-        "category_id": 1
+        "category_id": 9
     },
     {
         "id": 5,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
-        "category_id": 4
+        "category_id": 9
     },
     {
         "id": 6,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import NavbarMenu from "./component/Navbar/NavbarMenu";
 import Footer from "./component/Footer/Footer";
 import './App.css';
-import Aksesoris from "./pages/Item/Aksesoris";
+import ListItems from "./pages/Item/ListItems";
 
 const App = () => {
 
@@ -16,7 +16,7 @@ const App = () => {
       <NavbarMenu />
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='detail/aksesoris' element={<Aksesoris/>}/>
+        <Route path='detail/itemsbycategory' element={<ListItems/>}/>
         <Route path='pages/Register' element={<Register/>}/>
         <Route path='pages/Login' element={<Login/>}/>
         <Route path='about' element={<About/>}/>

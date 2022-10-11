@@ -1,10 +1,10 @@
 import React, {Component} from "react"
-import CardAksesoris from "../../component/Cards/Cards-Item/Aksesoris";
+import ItemsByCategory from "../../component/Cards/Cards-Item/ItemsByCategory";
 import SearchForm from "../../component/SearchForm/SearchForm";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-function Aksesoris(){
+function ListItems(){
     return(
         <div className="body">
             
@@ -20,6 +20,9 @@ function Aksesoris(){
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-uppercase fw-bold">Category</li>
                         <li class="list-group-item">
+                            <Link className="aksesoris" to={'/detail/aksesoris'}>Semua</Link>
+                        </li>
+                        <li class="list-group-item">
                             <Link className="aksesoris" to={'/detail/aksesoris'}>Aksesoris</Link>
                         </li>
                         <li class="list-group-item">
@@ -31,18 +34,15 @@ function Aksesoris(){
                         <li class="list-group-item">
                             <Link className="aksesoris" to={'/detail/aksesoris'}>Kendaraan</Link>
                         </li>
-                        <li class="list-group-item">
-                            <Link className="aksesoris" to={'/detail/aksesoris'}>Semua</Link>
-                        </li>
                         <li></li>
                     </ul>
                 </div>
                 <div className="col ms-auto">
-                    <CardAksesoris/>
+                    <ItemsByCategory/>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Aksesoris;
+export default ListItems;
