@@ -21,18 +21,54 @@
         "id": 4,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
-        "category_id": 9
+        "category_id": 2
     },
     {
         "id": 5,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
-        "category_id": 9
+        "category_id": 2
     },
     {
         "id": 6,
         "nama": "Apapun",
         "keterangan": "Keterangan barang",
         "category_id": 1
+    },
+    {
+        "id": 7,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 3
+    },
+    {
+        "id": 8,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 3
+    },
+    {
+        "id": 9,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 4
+    },
+    {
+        "id": 10,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 5
+    },
+    {
+        "id": 11,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 5
+    },
+    {
+        "id": 12,
+        "nama": "Apapun",
+        "keterangan": "Keterangan barang",
+        "category_id": 6
     }
 ]

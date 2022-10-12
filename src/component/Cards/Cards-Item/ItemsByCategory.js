@@ -1,25 +1,30 @@
 import Card from "react-bootstrap/Card";
 import React, { useEffect, useState } from "react";
-import icon_1 from "../../../images/item-1.png"
 import "./ItemsByCategory.css"
 import Data from "./ItemsByCategory.json"
 import { useLocation } from "react-router-dom";
 
 function ItemsByCategory(props) {
     const location = useLocation();
+    const idCategory = location.state;
     const [data, setData] = useState(Data);
 
-    const idCategory = location.state;
-
     useEffect(() => {
-      const filteredData = data.filter((item) => {
-        return item.category_id === idCategory;
-      });
-      setData(filteredData);
-    }, [])
+      if (idCategory) {
+        const filteredData = Data.filter((item) => {
+          return item.category_id === idCategory;
+        });
+        setData(filteredData);
+      }else{
+        console.log(Data);
+        setData(Data);
+      }
+    }, [location.state])
+
+    console.log(idCategory);
   
     const image = [
-        "https://www.frankncojewellery.com/id/articles/whats-new/rekomendasi-kalung-emas-wanita-asli-model-terbaru", "asdasd"
+        "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-15.png"
     ];
 
     return (
@@ -36,7 +41,7 @@ function ItemsByCategory(props) {
                 <Card className="card h-100 ">
                   <Card.Img
                     variant="top"
-                    src={icon_1}
+                    src={image}
                   />
                   <Card.Body>
                     <div className="judul-barang"></div>

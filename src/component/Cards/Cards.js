@@ -11,7 +11,13 @@ import { Link } from "react-router-dom";
 
 function cards() {
 
-  const idAksesoris = 1;
+  const idCategory = {
+    aksesoris:1,
+    dokumen:2,
+    elektronik:3,
+    kendaraan:4,
+    lain_lain:5
+  };
 
   return (
     <div className="container">
@@ -25,7 +31,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Aksesoris</Card.Title>
-              <Link state={idAksesoris} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={idCategory.aksesoris} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -38,7 +44,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Dokumen</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={idCategory.dokumen} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -51,7 +57,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Elektronik</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={idCategory.elektronik} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -64,7 +70,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Kendaraan</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={idCategory.kendaraan} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
@@ -77,7 +83,7 @@ function cards() {
             />
             <Card.Body>
               <Card.Title>Lain-Lain</Card.Title>
-              <Link className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={idCategory.lain_lain} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
