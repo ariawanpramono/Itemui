@@ -4,20 +4,27 @@ import "./ItemsByCategory.css"
 import Data from "./ItemsByCategory.json"
 import { useLocation } from "react-router-dom";
 
-function ItemsByCategory(props) {
+function ItemsByCategory() {
     const location = useLocation();
-    const idCategory = location.state;
+    const stateValue = location.state
+    const idCategory = stateValue.idCategory;
+    const searchKey = stateValue.searchKey
     const [data, setData] = useState(Data);
 
     useEffect(() => {
-      if (idCategory) {
-        const filteredData = Data.filter((item) => {
-          return item.category_id === idCategory;
-        });
+      if (searchKey) {
+        const filteredData = Data.filter(item=>item.nama.toLowerCase().includes(searchKey));
         setData(filteredData);
       }else{
-        console.log(Data);
-        setData(Data);
+        if (idCategory) {
+          const filteredData = Data.filter((item) => {
+            return item.category_id === idCategory;
+          });
+          setData(filteredData);
+        }else{
+          console.log(Data);
+          setData(Data);
+        }
       }
     }, [location.state])
 
@@ -36,8 +43,7 @@ function ItemsByCategory(props) {
           {
             data.map(data => {
             return(
- 
-                <div className="col-lg-2 col-md-3 col-6 mt-3">
+                <div key={data.id} className="col-lg-2 col-md-3 col-6 mt-3">
                 <Card className="card h-100 ">
                   <Card.Img
                     variant="top"
