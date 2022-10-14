@@ -30,22 +30,34 @@ function ListItems(){
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item text-uppercase fw-bold">Category</li>
                         <li class="list-group-item">
-                            <Link state={idCategory.semua} className="link" to={'/detail/itemsbycategory'}>Semua</Link>
+                            <Link state={{
+                idCategory: idCategory.semua
+              }} className="link" to={'/detail/itemsbycategory'}>Semua</Link>
                         </li>
                         <li class="list-group-item">
-                            <Link state={idCategory.aksesoris} className="link" to={'/detail/itemsbycategory'}>Aksesoris</Link>
+                            <Link state={{
+                            idCategory: idCategory.aksesoris
+                            }} className="link" to={'/detail/itemsbycategory'}>Aksesoris</Link>
                         </li>
                         <li class="list-group-item">
-                            <Link state={idCategory.dokumen} className="link" to={'/detail/itemsbycategory'}>Dokumen</Link>
+                            <Link state={{
+                            idCategory: idCategory.dokumen
+                            }} className="link" to={'/detail/itemsbycategory'}>Dokumen</Link>
                         </li>
                         <li class="list-group-item">
-                            <Link state={idCategory.elektronik} className="link" to={'/detail/itemsbycategory'}>Elektronik</Link>
+                            <Link state={{
+                            idCategory: idCategory.elektronik
+                            }} className="link" to={'/detail/itemsbycategory'}>Elektronik</Link>
                         </li>
                         <li class="list-group-item">
-                            <Link state={idCategory.kendaraan} className="link" to={'/detail/itemsbycategory'}>Kendaraan</Link>
+                            <Link state={{
+                            idCategory: idCategory.kendaraan
+                            }} className="link" to={'/detail/itemsbycategory'}>Kendaraan</Link>
                         </li>
                         <li class="list-group-item">
-                            <Link state={idCategory.lain_lain} className="link" to={'/detail/itemsbycategory'}>Lain-lain</Link>
+                            <Link state={{
+                            idCategory: idCategory.lain_lain
+                            }} className="link" to={'/detail/itemsbycategory'}>Lain-lain</Link>
                         </li>
                         <li></li>
                     </ul>

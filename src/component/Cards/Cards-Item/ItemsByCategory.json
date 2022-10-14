@@ -1,25 +1,25 @@
 [
     {
         "id": 1,
-        "nama": "Apapun",
-        "keterangan": "Keterangan barang",
+        "nama": "Jam Tangan",
+        "keterangan": "Warna hitam",
         "category_id": 1
     },
     {
         "id": 2,
-        "nama": "Apapun",
+        "nama": "Kalung Emas",
         "keterangan": "Keterangan barang",
         "category_id": 1
     },
     {
         "id": 3,
-        "nama": "Apapun",
+        "nama": "Gelang",
         "keterangan": "Keterangan barang",
         "category_id": 1
     },
     {
         "id": 4,
-        "nama": "Apapun",
+        "nama": "Skripsi",
         "keterangan": "Keterangan barang",
         "category_id": 2
     },
