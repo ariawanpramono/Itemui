@@ -1,6 +1,18 @@
-.container_ {
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 50px;
+.category-container{
   text-align: center;
+  
+}
+
+.detail-button{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-group{
+  justify-content: center;
+}
+
+.card-category{
+  max-width: 200px;
 }

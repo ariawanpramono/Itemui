@@ -1,86 +1,103 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import React from "react";
+import React, { useState } from "react";
 import "./Cards.css"
 import icon_1 from "../../images/item-1.png"
 import icon_2 from "../../images/item-2.png"
 import icon_3 from "../../images/item-3.png"
 import icon_4 from "../../images/item-4.png"
 import icon_5 from "../../images/item-5.png"
+import { Link } from "react-router-dom";
 
 function cards() {
-  return (
-    <div className="container_">
-      <div className="card-group">
 
-        <div className="row" style={{ marginRight: "25px" }}>
-          <Card class="card col-md-5" style={{ width: "10rem" }}>
+  const idCategory = {
+    aksesoris:1,
+    dokumen:2,
+    elektronik:3,
+    kendaraan:4,
+    lain_lain:5
+  };
+
+  return (
+    <div className="container category-container">
+      <div className="card-group">
+        <div className="row justify-content-center">
+          <div className="col-lg-2 col-md-3 col-6 mt-3 ">
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_1}
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Text</Card.Text>
-              <Button variant="primary">Detail</Button>
+              <Card.Title>Aksesoris</Card.Title>
+              <Link state={{
+                idCategory: idCategory.aksesoris
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
-        </div>
+          </div>
 
-        <div className="row" style={{ marginRight: "25px" }}>
-          <Card class="card col-md-5" style={{ width: "10rem" }}>
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_2}
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Text</Card.Text>
-              <Button variant="primary">Detail</Button>
+              <Card.Title>Dokumen</Card.Title>
+              <Link state={{
+                idCategory: idCategory.dokumen
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
-        </div>
+          </div>
 
-        <div className="row" style={{ marginRight: "25px" }}>
-          <Card class="card col-md-5" style={{ width: "10rem" }}>
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_3}
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Text</Card.Text>
-              <Button variant="primary">Detail</Button>
+              <Card.Title>Elektronik</Card.Title>
+              <Link state={{
+                idCategory: idCategory.elektronik
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
-        </div>
+          </div>
 
-        <div className="row" style={{ marginRight: "25px" }}>
-          <Card class="card col-md-5" style={{ width: "10rem" }}>
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_4}
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Text</Card.Text>
-              <Button variant="primary">Detail</Button>
+              <Card.Title>Kendaraan</Card.Title>
+              <Link state={{
+                idCategory: idCategory.kendaraan
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
-        </div>
+          </div>
 
-        <div className="row">
-          <Card class="card col-md-5" style={{ width: "10rem" }}>
+          <div className="col-lg-2 col-md-3 col-6 mt-3">
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_5}
             />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Text</Card.Text>
-              <Button variant="primary">Detail</Button>
+              <Card.Title>Lain-Lain</Card.Title>
+              <Link state={{
+                idCategory: idCategory.lain_lain
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
+          </div>
+
         </div>
         
       </div>

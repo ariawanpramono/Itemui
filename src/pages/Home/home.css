@@ -1,6 +1,6 @@
-.App {
-    margin: auto;
-    border: 1px solid black;
-    text-align: center;
-    width: 1000px;
+.home {
+    min-height: 1000px;
+    margin-bottom: 100px;
+    clear: both;
+    position: relative;
 }

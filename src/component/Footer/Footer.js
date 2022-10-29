@@ -5,9 +5,9 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <div class="footer">
-          <div class="footer-left">&copy; &nbsp; 2022 Kelompok 6</div>
-          <div class="footer-right">
+        <div className="footer">
+          <div className="footer-left">&copy; &nbsp; 2022 Kelompok 6</div>
+          <div className="footer-right">
             <a href="/">Terms and Conditions</a>
             <a href="/">Privacy and Policy</a>
           </div>

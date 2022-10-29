@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Cards from "../../component/Cards/Cards";
 import Header from "../../component/Header/Header";
 import NavbarMenu from "../../component/Navbar/NavbarMenu";
@@ -10,26 +10,18 @@ import { Route, Routes } from "react-router-dom";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import About from "../About/About";
+import Aksesoris from "../Item/ListItems";
+import { UserContext } from "../../App";
+
 
 const Home = () => {
   return (
-    <main>
-      <NavbarMenu />
-      <br />
+    <main className="home">
       <Header />
       <br />
       <SearchForm />
       <br /> 
-      <Cards />
-      <br />
-      <Footer />
-
-      <Routes>
-        <Route path='pages/Register' element={<Register/>}/>
-        <Route path='pages/Login' element={<Login/>}/>
-        <Route path='about' element={<About/>}/>
-      </Routes>
-      
+      <Cards/>
     </main>
 
   );

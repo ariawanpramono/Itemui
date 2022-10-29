@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nama": "Jam Tangan",
+        "keterangan": "Warna hitam",
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "nama": "Kalung Emas",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 3,
+        "nama": "Gelang",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 4,
+        "nama": "Skripsi",
+        "keterangan": "Keterangan barang",
+        "category_id": 2
+    },
+    {
+        "id": 5,
+        "nama": "Kartu Keluarga",
+        "keterangan": "Keterangan barang",
+        "category_id": 2
+    },
+    {
+        "id": 6,
+        "nama": "Sepatu",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    },
+    {
+        "id": 7,
+        "nama": "Laptop",
+        "keterangan": "Keterangan barang",
+        "category_id": 3
+    },
+    {
+        "id": 8,
+        "nama": "Handphone",
+        "keterangan": "Keterangan barang",
+        "category_id": 3
+    },
+    {
+        "id": 9,
+        "nama": "Sepeda Listrik",
+        "keterangan": "Keterangan barang",
+        "category_id": 4
+    },
+    {
+        "id": 10,
+        "nama": "Kunci Rumah",
+        "keterangan": "Keterangan barang",
+        "category_id": 5
+    },
+    {
+        "id": 11,
+        "nama": "Parfum",
+        "keterangan": "Keterangan barang",
+        "category_id": 5
+    },
+    {
+        "id": 12,
+        "nama": "Kalung Perak",
+        "keterangan": "Keterangan barang",
+        "category_id": 1
+    }
+]

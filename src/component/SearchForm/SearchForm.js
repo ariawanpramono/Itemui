@@ -1,24 +1,36 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./SearchForm.css";
 
 const SearchForm = () => {
+
+  const [searchInput, setSearchInput] = useState('');
+
   return (
-    <div className="search-form">
-      <div className="container_s">
-        <div className="search-form-content">
-          <form className="search-form">
-            <div className="search-form-elem flex flex-sb bg-white">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="search"
-              >
-              </input>
-              <button type="submit" className="button_s">Cari</button>
+    <>
+      <div className="container">
+        <div className="row height d-flex justify-content-center align-items-center">
+          <div className="col-md-8">
+            <div className="search">
+              <input 
+                type="text" 
+                className="form-control" 
+                onChange={(e) => {
+                  setSearchInput(e.target.value);
+                }}
+              />
+              <button className="btn btn-sm btn-primary">
+              <Link state={{
+                searchKey: searchInput
+              }} to={'/detail/itemsbycategory'}>Search</Link>
+              </button>
             </div>
-          </form>
+            
+          </div>
         </div>
       </div>
-    </div>
+    </>
+
   );
 };
 
