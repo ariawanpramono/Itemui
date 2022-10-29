@@ -8,10 +8,10 @@ const SearchForm = () => {
 
   return (
     <>
-      <div class="container">
-        <div class="row height d-flex justify-content-center align-items-center">
-          <div class="col-md-8">
-            <div class="search">
+      <div className="container">
+        <div className="row height d-flex justify-content-center align-items-center">
+          <div className="col-md-8">
+            <div className="search">
               <input 
                 type="text" 
                 className="form-control" 
@@ -19,9 +19,11 @@ const SearchForm = () => {
                   setSearchInput(e.target.value);
                 }}
               />
+              <button className="btn btn-sm btn-primary">
               <Link state={{
                 searchKey: searchInput
-              }} to={'/detail/itemsbycategory'} class="btn btn-sm btn-primary">Search</Link>
+              }} to={'/detail/itemsbycategory'}>Search</Link>
+              </button>
             </div>
             
           </div>

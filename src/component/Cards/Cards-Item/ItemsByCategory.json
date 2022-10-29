@@ -25,50 +25,50 @@
     },
     {
         "id": 5,
-        "nama": "Apapun",
+        "nama": "Kartu Keluarga",
         "keterangan": "Keterangan barang",
         "category_id": 2
     },
     {
         "id": 6,
-        "nama": "Apapun",
+        "nama": "Sepatu",
         "keterangan": "Keterangan barang",
         "category_id": 1
     },
     {
         "id": 7,
-        "nama": "Apapun",
+        "nama": "Laptop",
         "keterangan": "Keterangan barang",
         "category_id": 3
     },
     {
         "id": 8,
-        "nama": "Apapun",
+        "nama": "Handphone",
         "keterangan": "Keterangan barang",
         "category_id": 3
     },
     {
         "id": 9,
-        "nama": "Apapun",
+        "nama": "Sepeda Listrik",
         "keterangan": "Keterangan barang",
         "category_id": 4
     },
     {
         "id": 10,
-        "nama": "Apapun",
+        "nama": "Kunci Rumah",
         "keterangan": "Keterangan barang",
         "category_id": 5
     },
     {
         "id": 11,
-        "nama": "Apapun",
+        "nama": "Parfum",
         "keterangan": "Keterangan barang",
         "category_id": 5
     },
     {
         "id": 12,
-        "nama": "Apapun",
+        "nama": "Kalung Perak",
         "keterangan": "Keterangan barang",
-        "category_id": 6
+        "category_id": 1
     }
 ]

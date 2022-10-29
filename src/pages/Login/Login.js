@@ -1,44 +1,36 @@
+import axios from "axios";
 import React, { Component, useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import { UserContext } from "../../UserContext";
 import "../LoginRegister.css";
 
 export default function Login(){
 
-  const {user, setUser} = useContext(UserContext);
+  const[email, setEmail] = useState('')
+  const[password, setPassword] = useState('');
+
+  const [msg, setMsg] = useState('')
   const navigate = useNavigate();
 
-  const data = [
-    {
-      id: 1,
-      username: "tes",
-      email: "rifqides12@gmail.com",
-      password: "123"
-    }
-  ]
-
-  const [details, setDetails] = useState({
-    email: "",
-    password: ""
-  })
-
-  const submitHandler = e => {
+  const Auth = async(e) => {
     e.preventDefault();
-    const checkUser = data.filter((user) => {
-      return user.email === details.email && user.password == details.password;
-    });
-    if (checkUser) {
-      const dataUserLog = checkUser[0];
-      setUser(dataUserLog);
-      navigate('/');
+    try {
+      await axios.post('http://localhost:5000/login',{
+        email: email,
+        password: password,
+      },{withCredentials:true})
+      navigate('/', { state: { log: 1 } })
+    } catch (error) {
+      console.log(error.response.data.msg)
+      setMsg(error.response.data.msg)
     }
-    console.log(user);
   }
 
   return (
     <div className="container_login container text-start col-md-4 col-9">
-      <form onSubmit={submitHandler}>
+      <form onSubmit={Auth}>
         <h3>Sign In</h3>
+        <hr></hr>
+          <p className="text-danger">{msg}</p>
         <div className="mb-3">
           <label>Email address</label>
           <input
@@ -47,9 +39,9 @@ export default function Login(){
             name="email"
             placeholder="Enter email"
             onChange={
-              e => setDetails({...details, email: e.target.value})
+             (e) => setEmail(e.target.value)
             }
-            value={details.email}
+            value={email}
             required
           />
         </div>
@@ -61,9 +53,9 @@ export default function Login(){
             name="password"
             placeholder="Enter password"
             onChange={
-              e => setDetails({...details, password: e.target.value})
-            }
-            value={details.password}
+              (e) => setPassword(e.target.value)
+             }
+            value={password}
             required
           />
         </div>

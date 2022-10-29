@@ -1,4 +1,4 @@
-.container{
+.category-container{
   text-align: center;
   
 }
@@ -13,6 +13,6 @@
   justify-content: center;
 }
 
-.card{
+.card-category{
   max-width: 200px;
 }

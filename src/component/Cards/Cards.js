@@ -20,70 +20,80 @@ function cards() {
   };
 
   return (
-    <div className="container">
+    <div className="container category-container">
       <div className="card-group">
         <div className="row justify-content-center">
           <div className="col-lg-2 col-md-3 col-6 mt-3 ">
-          <Card class="card h-100" >
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_1}
             />
             <Card.Body>
               <Card.Title>Aksesoris</Card.Title>
-              <Link state={idCategory.aksesoris} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={{
+                idCategory: idCategory.aksesoris
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
 
           <div className="col-lg-2 col-md-3 col-6 mt-3">
-          <Card class="card h-100" >
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_2}
             />
             <Card.Body>
               <Card.Title>Dokumen</Card.Title>
-              <Link state={idCategory.dokumen} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={{
+                idCategory: idCategory.dokumen
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
 
           <div className="col-lg-2 col-md-3 col-6 mt-3">
-          <Card class="card h-100" >
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_3}
             />
             <Card.Body>
               <Card.Title>Elektronik</Card.Title>
-              <Link state={idCategory.elektronik} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={{
+                idCategory: idCategory.elektronik
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
 
           <div className="col-lg-2 col-md-3 col-6 mt-3">
-          <Card class="card h-100" >
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_4}
             />
             <Card.Body>
               <Card.Title>Kendaraan</Card.Title>
-              <Link state={idCategory.kendaraan} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={{
+                idCategory: idCategory.kendaraan
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>
 
           <div className="col-lg-2 col-md-3 col-6 mt-3">
-          <Card class="card h-100" >
+          <Card class="card-category card h-100" >
             <Card.Img
               variant="top"
               src={icon_5}
             />
             <Card.Body>
               <Card.Title>Lain-Lain</Card.Title>
-              <Link state={idCategory.lain_lain} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
+              <Link state={{
+                idCategory: idCategory.lain_lain
+              }} className="btn btn-primary btn-block btn-sm" to={'/detail/itemsbycategory'}>Detail</Link>
             </Card.Body>
           </Card>
           </div>

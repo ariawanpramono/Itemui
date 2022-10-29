@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Cards from "../../component/Cards/Cards";
 import Header from "../../component/Header/Header";
 import NavbarMenu from "../../component/Navbar/NavbarMenu";
@@ -11,17 +11,17 @@ import Register from "../Register/Register";
 import Login from "../Login/Login";
 import About from "../About/About";
 import Aksesoris from "../Item/ListItems";
+import { UserContext } from "../../App";
+
 
 const Home = () => {
   return (
     <main className="home">
-     
       <Header />
       <br />
       <SearchForm />
       <br /> 
       <Cards/>
-
     </main>
 
   );
